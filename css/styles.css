@@ -3,6 +3,7 @@
 	--main-text-color: #212121;
 	--text-color: #757575;
 	--main-background-color: #ffffff;
+	--main-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .body {
@@ -112,7 +113,7 @@ img {
 	color: #212121;
 	text-decoration: none;
 
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color var(--main-transition);
 }
 
 .nav-link:hover,
@@ -160,7 +161,7 @@ img {
 	color: var(--text-color);
 	text-decoration: none;
 
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color var(--main-transition);
 }
 
 .nav-contact:hover,
@@ -229,7 +230,7 @@ img {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color var(--main-transition);
 }
 
 .hero-button:hover,
@@ -411,13 +412,13 @@ img {
 
 	border-radius: 50%;
 
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color var(--main-transition);
 }
 
 .social-icon {
 	fill: #afb1b8;
 
-	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: fill var(--main-transition);
 }
 
 .social-net:hover,
@@ -464,13 +465,13 @@ img {
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
 
-	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: border var(--main-transition);
 }
 
 .client-icon {
 	fill: #afb1b8;
 
-	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: fill var(--main-transition);
 }
 
 .client-link:hover,
@@ -533,7 +534,7 @@ img {
 	color: rgba(255, 255, 255, 0.6);
 	text-decoration: none;
 
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color var(--main-transition);
 }
 
 .address-list {
@@ -581,7 +582,7 @@ img {
 
 	background-color: rgba(255, 255, 255, 0.1);
 
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color var(--main-transition);
 }
 
 .media-icon {
@@ -622,8 +623,7 @@ img {
 	background-color: #f5f4fa;
 	border: none;
 
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color var(--main-transition), color var(--main-transition), box-shadow var(--main-transition);
 }
 
 .filter-buttons:hover,
@@ -650,7 +650,7 @@ img {
 	display: block;
 	text-decoration: none;
 
-	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: box-shadow var(--main-transition);
 }
 
 .portfolio-link:hover,
@@ -710,7 +710,7 @@ img {
 
 	transform: translateY(0%);
 
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: transform var(--main-transition);
 }
 
 .overlay-text {
@@ -739,7 +739,7 @@ img {
 
 	opacity: 1;
 	visibility: visible;
-	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: opacity var(--main-transition), visibility var(--main-transition);
 }
 
 .backdrop.is-hidden {
@@ -786,6 +786,8 @@ img {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 
 	cursor: pointer;
+
+	transition: background-color var(--main-transition);
 }
 
 .modal-close:hover {
